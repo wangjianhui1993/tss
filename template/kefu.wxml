@@ -1,0 +1,22 @@
+ <template name="kefu">
+    <view class='kefu'>
+        <contact-button style='opacity:0;' style='float:left;'
+        type="default-dark" 
+        size="50"
+        session-from="weapp" open-type="contact">
+        </contact-button> 
+        <contact-button style='opacity:0;' style='float:left;'
+        type="default-dark" 
+        size="50"
+        session-from="weapp" open-type="contact">
+        </contact-button> 
+        <contact-button style='opacity:0;' style='float:left;'
+        type="default-dark" 
+        size="50"
+        session-from="weapp" open-type="contact">
+        </contact-button> 
+    </view>
+    <view class='kefu2'>
+      <image src='../../imgs/kefu.png'></image>
+    </view>
+  </template>  

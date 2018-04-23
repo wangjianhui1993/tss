@@ -1,0 +1,27 @@
+/**搜索框*/
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30rpx 20rpx;
+    height: 90rpx;
+    min-height: 90rpx;
+    background: #fff;
+    border:1px solid #cdcdcd;
+    border-radius: 10rpx;
+}
+.search{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.search .icon{
+    width: 42rpx;
+    height: 42rpx;
+}
+.search text{
+    margin-left: 20rpx;
+    font-size: 28rpx;
+    color:#bcbcbc
+}

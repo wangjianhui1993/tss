@@ -1,0 +1,19 @@
+<!--pages/about/index.wxml-->
+<view class="container">
+  
+  <view class="weui-article__p">
+  <view class='logo'>lgoo</view>
+<text>  他山石（北京开元智汇管理咨询有限公司旗下高端品牌）定位为全球思想家、经济学家来中国演讲的专业经纪机构</text>。
+<text>
+我们致力于提升中国与世界级思想的连接效率，让国际顶尖思想助力实现中国梦。他山石代理多位全球知名经济学家、商界领袖、科学家、创业者、投资人及畅销书作家的来华演讲业务，同时为政府、企业、媒体、商学院提供高端论坛策划和国际商务合作服务。嘉宾研究范围涵盖科技、资本、创新、金融、人工智能、大数据、教育等多个领域。
+</text>
+
+  </view>
+  <view class="weui-footer weui-footer_fixed-bottom">
+
+    <view class="weui-footer__links">
+      <navigator url="" class="weui-footer__link">WeUI首页</navigator>
+    </view>
+    <view class="weui-footer__text">Copyright © 2008-2016 weui.io</view>
+  </view>
+</view>

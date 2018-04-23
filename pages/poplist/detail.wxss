@@ -1,0 +1,106 @@
+/* pages/poplist/detail.wxss */
+.container{
+  display: flex;
+  flex-direction:column; 
+}
+.head{
+  margin-top:5rpx;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+}
+.head image{ width: 105px; height: 91px;}
+/*简介*/
+.jianjie{
+  /* line-height: 10rpx; */
+  height: 200rpx;
+   border-top:1px solid black;
+    border-bottom:1px solid black;
+    background: white;
+    margin-top: 20rpx;
+    font-size: 14px;
+}
+/*相关视频*/
+.dd{
+  /* width: 750rpx; */
+  display: flex;
+  flex-direction: row;
+}
+.d-video{
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  background: white;
+  margin-top: 20rpx;
+}
+.d-videocont{
+  display: flex;
+  flex-direction: row;
+}
+.d-videocont view{
+  margin-left: 50rpx;
+}
+.d-img{
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  width: 200rpx;
+  height: 200rpx;
+  display: inline-block;
+}
+/*近期来华*/
+.news view:nth-of-type(odd){
+  background: red;
+}
+.news view:nth-of-type(even){
+  background: yellowgreen;
+}
+/*你可能喜欢 样式用的相关视频*/
+
+
+/*相关内容报道*/
+.report{
+  display: flex;
+  flex-direction: column;
+   border-top:1px solid black;
+  border-bottom:1px solid black;
+  background: white;
+  margin-top: 20px;
+}
+.report view{
+  margin-top: 20px;
+}
+/*视频弹出窗 */
+.tost{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
+  left: 0;
+  top:0;
+}
+.tost-cont{
+  width: 400rpx;
+  height: 400rpx;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -200rpx;
+  margin-top: -300rpx; 
+  background: white;
+}
+.tost-cont{
+  width: 200rpx;
+  height: 200rpx;
+}
+video {
+width:300px;
+height:225px;
+display:inline-block;
+line-height:0;
+overflow:hidden;
+position:relative;
+left:-110rpx;
+
+}

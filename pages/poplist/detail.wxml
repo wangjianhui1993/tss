@@ -1,0 +1,71 @@
+<!--pages/poplist/detail.wxml-->
+<view class='container'>
+  <view class='head'>
+    <view>
+      <image src='../../imgs/tx.jpg' mode="widthFix"></image>
+    </view>
+    <view class='dec'>
+      <view>
+        <text>凯文*凯利</text>
+      </view>
+      <view>
+        <text>杂志创始主编</text>
+      </view>
+    </view>
+  </view>
+  <!--相关介绍-->
+  <scroll-view class='jianjie' scroll-y style='height:200rpx;'>
+    <text>人工智能第一权威。卡耐基梅隆大学计算机学院副院长，计算机学院人机交互研究所（HCI）的荣誉主任。世界经济论坛（WEF）计算机全球未来理事会主席。WEF人工智能委员会拥有全球最顶级的人工智能领域专家，2011年卡塞尔因其在该领域的卓越贡献被任命为主席。并连续6年（2012-2017）在达沃斯世界经济论坛担任演讲人。是Yahoo-CMU未来私人助手研究项目的负责人之一。卡塞尔是人形对话代理（ECA,Embodied Conversational Agent）的发明人，其研究在业界影响深远，是人工智能领域的第一权威。多次受谷歌等企业邀请分享其前沿研究成果。学术成就2016年，成为国际计算机学会ACM会员；2016年，成为苏格兰皇家学院成员；2012年，成为美国科学促进会AAAS成员；2011年，提名世界经济论坛（WEF）人工智能委员会成员（现任主席）；2008年，著名科技领域女性组织安妮塔博格研究院“女性领导力奖”；2006年，任AT&T西北大学研究中心主席；2001年，MIT获得埃杰顿奖（埃杰顿被称为“结冻时间的人”）。</text>
+  </scroll-view>
+
+  <!--相关视频-->
+  <view class='d-video'>
+    <view>相关视频</view>
+    <scroll-view scroll-x style=" white-space: nowrap; display: flex">
+      <view class='d-img' wx:for='{{video}}' wx:for-index="index" data-index="{{index}}" bindtap='chooseVideo' id='{{index}}'>
+        <image src='{{videoLpic}}' mode="widthFix"></image>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!--近期来华-->
+  
+  <view class='d-video'>
+    <view><text>近期来华</text></view>
+    <view class='news'>
+      <view>12312</view>
+      <view>4566</view>
+      <view>7889</view>
+      <view>101010</view>
+    </view>
+
+  </view>
+<!--你可能喜欢的-->
+   <view class='d-video'>
+    <view>你可能喜欢</view>
+    <scroll-view scroll-x style=" white-space: nowrap; display: flex">
+      <view class='d-img' wx:for='{{likes}}' wx:for-index="index" data-index="{{index}}" bindtap='chooseLikes' id='{{index}}'>
+        <image src='{{videoLpic}}' mode="widthFix"></image>
+      </view>
+    </scroll-view>
+  </view>
+<!--相关内容报道-->
+<view class='report'>
+  <view>相关内容报道</view>
+  <view style='padding-left:20rpx;'>
+    <view>123123</view>
+    <view>45567</view>
+    <view>123123123</view>
+  </view>
+  
+</view>
+
+<!--tost弹出层-->
+<view class='tost'wx:if="{{tost}}" catchtap='close'>
+  <view class='tost-cont'catchtap>
+    <video  id="myVideo"  src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"  controls></video>
+  </view>
+</view>
+
+
+</view>

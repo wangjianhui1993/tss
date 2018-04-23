@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/fenlei/fenlei",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/poplist/detail",
+    "pages/about/index",
+    
+    "pages/submit/submit",
+    "pages/search/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1f2230",
+    "navigationBarTitleText": "他山石",
+    "navigationBarTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "red",
+    "selectedColor": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "imgs/sy.png",
+        "selectedIconPath": "imgs/sy2.png"
+      },
+      {
+        "pagePath": "pages/fenlei/fenlei",
+        "text": "分类",
+        "iconPath": "imgs/fl1.png",
+        "selectedIconPath": "imgs/fl2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人中心",
+        "iconPath": "imgs/grzx1.png",
+        "selectedIconPath": "imgs/grzx2.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

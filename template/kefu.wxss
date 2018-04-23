@@ -1,0 +1,56 @@
+.kefu{
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  bottom: 50rpx;
+  right: 80rpx;
+  border: 1px solid black;
+  overflow: hidden;
+  z-index: 20;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  opacity: 0;
+}
+.kefu2{
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  bottom: 50rpx;
+  right: 80rpx;
+  /* border: 1px solid black; */
+  z-index: 10
+}
+.kefu2 image{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+
+/*客服*/
+.myView {
+  font-size: 35rpx;
+  margin: 20rpx;
+}
+
+.cBtn {
+  height: 100rpx;
+  margin-left: 300rpx;
+}
+
+.cs_button {
+  background-color: #fff;
+  border: 0px;
+  height: 100rpx;
+  position: fixed;
+  margin-left: 240rpx;
+}
+
+.cs_button:after {
+  border: 0px;
+}
+
+.cs_image {
+  width: 100rpx;
+  height: 100rpx;
+}

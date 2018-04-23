@@ -1,0 +1,8 @@
+<template name="search-bar">
+    <navigator hover-class="none" class="search-bar" url="/pages/search/index">
+        <view class="search">
+            <image class="icon" src="/imgs/Group12.png"></image>
+            <text>搜索</text>
+        </view>
+    </navigator>
+</template>

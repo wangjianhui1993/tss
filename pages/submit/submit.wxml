@@ -1,0 +1,131 @@
+<view class='container'>
+  <view class="weui-panel__bd weui-panel">
+    <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+        <image class="weui-media-box__thumb" src="../../imgs/tx.jpg" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">凯文凯特</view>
+        <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+      </view>
+    </navigator>
+  </view>
+
+  <!--需求说明-->
+  <view class='weui-panel'>
+    <view class="weui-cells__title">需求说明</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <textarea class="weui-textarea" placeholder="请具体说明需要嘉宾配合那些工作" style="height: 3.3em" />
+          <!-- <view class="weui-textarea-counter">0/200</view> -->
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--项目介绍-->
+  <view class='weui-panel'>
+    <view class="weui-cells__title">项目介绍</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <textarea class="weui-textarea" placeholder="请具体说明项目背景 、活动主题和相关内容" style="height: 3.3em" />
+          <!-- <view class="weui-textarea-counter">0/200</view> -->
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--预约时间-->
+  <view class='weui-panel'>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input weui-cell_vcode">
+        <view class="weui-cell__hd">
+          <view class="weui-label">预约时间</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="date" value="{{date}}" start="2018-05-01" end="2035-09-01" bindchange="bindDateChange">
+            <view class="weui-input" style='color: #808080;'>{{date}}</view>
+          </picker>
+        </view>
+        <view class="weui-cell__ft">
+          <view class="weui-vcode-btn" bindtap='selectTime'>待定</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--活动地点-->
+  <view class='weui-panel'>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">活动地点</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入" />
+      </view>
+    </view>
+  </view>
+
+  <!--公司名称-->
+  <view class='weui-panel'>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">公司名称</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入" />
+      </view>
+    </view>
+  </view>
+
+  <!--联系人-->
+  <view class='weui-panel'>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">联系人</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入" />
+      </view>
+    </view>
+  </view>
+
+  <!--联系方式-->
+  <view class='weui-panel'>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">联系方式</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入" />
+      </view>
+    </view>
+  </view>
+
+  <view class='weui-panel' style='height:2.58823529em;line-height:2.58823529em '>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label"> 预算范围</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" style=' width: 100rpx;height: 50rpx;border: 1px solid black;' />
+      </view>
+      <view class="weui-cell__bd">
+         <view class="weui-label "><text style='margin-left:20rpx;'>万  --</text></view>
+      </view>
+     <view class="weui-cell__bd" style='margin-left:-80rpx;'>
+        <input class="weui-input" style=' width: 100rpx;height: 50rpx;border: 1px solid black;' />
+      </view>
+      <view class="weui-cell__bd">
+         <view class="weui-label "><text style='margin-left:20rpx;'>万</text></view>
+      </view>
+    </view>
+  </view>
+
+  <button class="weui-btn submit">提交</button>
+
+  <view style='height:50rpx;'></view>
+
+
+
+</view>

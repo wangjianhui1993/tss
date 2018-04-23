@@ -1,0 +1,23 @@
+@import "../../weui.wxss";
+ .container{
+   display: flex;
+   flex-direction: column;
+   padding-top:10rpx; 
+ }
+ .submit{
+   width: 80%;
+   background-color:yellow; 
+ }
+.button-hover{
+  background-color:red; 
+}
+.btn{
+  width: 100rpx;
+  height: 50rpx;
+  border: 1px solid black;
+}
+.weui-input {
+  min-height: 50rpx;
+  
+}
+

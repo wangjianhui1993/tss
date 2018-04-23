@@ -1,0 +1,39 @@
+<import src="/template/search-bar.wxml" />
+<import src="/template/kefu.wxml" />
+<!--引入搜索框模板 引入客服模板 end-->
+<view class="container">
+  <!--搜索框-->
+   <template is="search-bar" /> 
+  <!--轮播图-->
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="widthFix" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--Tag  十个tag-->
+  <view class='tag'>
+  
+  </view>
+  <!--pop-list-->
+  <view class='pop-list' wx:for='{{listData}}' wx:for-item='list' wx:key='{{list.viewid}}'>
+    <navigator url="/pages/poplist/detail?listIndex={{index}}">
+      <view class='head-photo'>
+        <view class='head-img'><image src='{{list.pic}}'/></view>
+        <view class='pop-text'><text>{{list.dec}}</text></view>
+      </view>
+     </navigator>  
+      <view class='pop-ask'>
+        <view class='pop-name'><text >{{list.popName}}</text></view>
+        <view class='collect'><text>收藏</text></view>
+        <navigator url='/pages/submit/submit?listIndex={{index}}' >
+        <view class='yaoqing' bindtap='ask'><text>+邀请</text></view>
+        </navigator>
+      </view>
+   
+  </view>
+  <!--pop-list end-->
+   <template is="kefu" /> 
+  
+</view>
